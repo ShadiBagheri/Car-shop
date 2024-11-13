@@ -7,7 +7,7 @@ const Card = (props) => {
 
     return(
         <Link href={`/cars/${id}`}>
-            <div className="w-[320px] h-[360px] mx-auto p-4 bg-[#fff]">
+            <div className="w-[320px] h-[360px] mx-auto p-4 bg-[#fff] shadow-md">
                 <img className="w-[300px] h-[200px]" src={image} alt="img"/>
                 <h4 className="mt-4 text-xl font-bold">{`${name} ${model}`}</h4>
                 <p className="mt-2 text-gray-500 text-md">{`${year} | ${distance} km`}</p>

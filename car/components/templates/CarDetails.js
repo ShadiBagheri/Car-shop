@@ -15,7 +15,7 @@ const CarDetails = (props) => {
                 <img className="w-[550px] h-[400px] shadow-md" src={image} alt="img"/>
                 <div className="flex flex-col w-[550px] h-[400px] p-10 text-justify bg-[#fff] shadow-md">
                     <h3 className="flex text-2xl font-bold">{name} {model}</h3>
-                    <div className="w-[550px] grid grid-cols-2 mt-4 gap-x-16">
+                    <div className="w-[550px] grid grid-cols-2 mt-4 gap-x-10">
                         <div className="flex mt-5 gap-3">
                             <Company />
                             <p className="font-bold">Company:</p>

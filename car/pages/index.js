@@ -1,9 +1,22 @@
-// import Image from "next/image";
+//Data
+import carsData from "@/data/carsData";
+//Module
+import SearchBox from "@/components/module/SearchBox";
+import Categories from "@/components/module/Categories";
+import Albums from "@/components/module/Albums";
+//Templates
+import CarsPage from "@/components/templates/CarsPage";
 
 export default function Home() {
-  return (
-    <div className="flex items-center w-4/5 h-screen mx-auto bg-gray-100">
-      <h1>HomePage</h1>
-    </div>
-  );
+    const cars = carsData.slice(0, 3);
+
+    return (
+        <div className="flex flex-col items-center mx-auto">
+            <SearchBox/>
+            <Categories/>
+            <Albums/>
+            <CarsPage data={cars}/>
+        </div>
+
+    );
 }

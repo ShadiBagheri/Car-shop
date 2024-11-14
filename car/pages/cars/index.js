@@ -1,5 +1,8 @@
-import CarsPage from "@/components/templates/CarsPage";
+//Data
 import carsData from "@/data/carsData";
+//Templates
+import CarsPage from "@/components/templates/CarsPage";
+//Module
 import Categories from "@/components/module/Categories";
 import SearchBox from "@/components/module/SearchBox";
 
